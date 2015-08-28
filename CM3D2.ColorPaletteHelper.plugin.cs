@@ -29,7 +29,7 @@ using UnityInjector.Attributes;
 
 namespace CM3D2.ColorPaletteHelper.Plugin
 {
-    [PluginFilter("CM3D2x64"), PluginFilter("CM3D2x86"), PluginFilter("CM3D2VRx64"), PluginName("CM3D2 Color Palette Helper"), PluginVersion("0.1.0")]
+    [PluginFilter("CM3D2x64"), PluginFilter("CM3D2x86"), PluginFilter("CM3D2VRx64"), PluginName("CM3D2 Color Palette Helper"), PluginVersion("0.1.0en")]
 
     public class ColorPaletteHelper : PluginBase
     {
@@ -74,7 +74,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
             }
         };
 
-        private const string version = "0.1.0";
+        private const string version = "0.1.0en";
 
         private int m_current_level;
         private GameObject m_color_palette_panel;
@@ -211,7 +211,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "色相:" + color.m_main_hue);
+                    GUI.Label(label_rect, "Hue (main):" + color.m_main_hue);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -261,7 +261,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "彩度:" + color.m_main_chroma);
+                    GUI.Label(label_rect, "Saturation (main):" + color.m_main_chroma);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -311,7 +311,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "明度:" + color.m_main_brightness);
+                    GUI.Label(label_rect, "Brightness (main):" + color.m_main_brightness);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -361,7 +361,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "対照:" + color.m_main_contrast);
+                    GUI.Label(label_rect, "Contrast (main):" + color.m_main_contrast);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -411,7 +411,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "色相(影):" + color.m_shadow_hue);
+                    GUI.Label(label_rect, "Hue (shadow):" + color.m_shadow_hue);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -461,7 +461,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "彩度(影):" + color.m_shadow_chroma);
+                    GUI.Label(label_rect, "Saturation (shadow):" + color.m_shadow_chroma);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -511,7 +511,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "明度(影):" + color.m_shadow_brightness);
+                    GUI.Label(label_rect, "Brightness (shadow):" + color.m_shadow_brightness);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -561,7 +561,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "対照(影):" + color.m_shadow_contrast);
+                    GUI.Label(label_rect, "Contrast (shadow):" + color.m_shadow_contrast);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
@@ -611,7 +611,7 @@ namespace CM3D2.ColorPaletteHelper.Plugin
 
                     Rect label_rect = new Rect(control_x, base_y, control_width, 20.0f);
 
-                    GUI.Label(label_rect, "影率:" + color.m_shadow_rate);
+                    GUI.Label(label_rect, "Shadown intensity:" + color.m_shadow_rate);
 
                     Rect slider_rect = new Rect(control_x, base_y + 20.0f, control_width, 20.0f);
 
